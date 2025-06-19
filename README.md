@@ -8,7 +8,8 @@ Designed to replicate a modern OTT platform, CineGenie allows users to search, b
 
 ## 🌐 Live Demo
 
-🔗 [https://cinegenie.vercel.app](https://cinegenie.vercel.app)
+🔗[ [https://cinegenie.vercel.app](https://cinegenie.vercel.app)](https://cinegenieai-app1.vercel.app
+)
 
 ---
 
