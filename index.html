@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CineGenie</title>
+  
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<body>
+  <nav>
+    <h1>CineGenie 🎬</h1>
+    <button id="theme-toggle">🌙</button>
+    <button onclick="logout()">Logout</button>
+  </nav>
+
+  <div class="search-container">
+    <input type="text" id="search-input" placeholder="Search for a movie..." />
+    <button onclick="searchMovie()">Search</button>
+  </div>
+
+  <div id="loader" class="hidden">Loading...</div>
+  <div id="results" class="movie-grid"></div>
+  <section class="slider-section">
+  <h2>🎥 Movies For You</h2>
+  <div id="hero-slider" class="movie-slider">
+  </div>
+</section>
+
+<section>
+  <h2>🔥 Trending Now</h2>
+  <div id="trending-section" class="movie-grid"></div>
+</section>
+
+<section>
+  <h2>⏳ Upcoming Movies</h2>
+  <div id="upcoming-section" class="movie-grid"></div>
+</section>
+    <script>
+        if (localStorage.getItem("isLoggedIn") !== "true") {
+            window.location.href = "login.html";
+        }
+    </script>
+
+  <script src="index.js"></script>
+</body>
+</html>
